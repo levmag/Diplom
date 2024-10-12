@@ -1,5 +1,35 @@
 <!DOCTYPE html>
-<html><body>
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <head>
+  <body>
+    /* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300px);
+    }
+}
 <input type="date" tabindex="1">
 Выбор даты
 <input type="time" tabindex="2">
@@ -89,4 +119,5 @@ value="no"> </label></li>
   <input type="date" namе="имя" valuе="2013-01-14">
   <input type="submit"><input type="reset">
   </fieldset></р>
+  
   </body></html>
